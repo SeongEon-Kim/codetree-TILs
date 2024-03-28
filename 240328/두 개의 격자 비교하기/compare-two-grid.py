@@ -12,5 +12,5 @@ for i in range(n):
 
 for i in range(n):
     for j in range(m):
-        print(result_arr[n][m], end= " ")
+        print(result_arr[i][j], end= " ")
     print()

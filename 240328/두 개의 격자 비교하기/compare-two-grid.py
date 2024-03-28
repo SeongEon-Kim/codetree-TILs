@@ -7,7 +7,7 @@ result_arr = [[0 for _ in range(n)] for _ in range(m)]
 
 for i in range(n):
     for j in range(m):
-        if first_arr[i][j] == second_arr[i][j]:
+        if first_arr[i][j] != second_arr[i][j]:
             result_arr[i][j] = 1
 
 for i in range(n):

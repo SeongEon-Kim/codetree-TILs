@@ -7,7 +7,4 @@ for i in range(n[0]):
         print(start, end=" ")
         start += n[0] 
     print()
-    if i == 0:
-        start = i + 2
-    else: 
-        start = i + 1
+    start = i + 2

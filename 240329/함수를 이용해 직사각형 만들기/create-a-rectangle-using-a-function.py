@@ -1,6 +1,6 @@
 def print_rect(n, m):
     for _ in range(n):
-        print("*" * m)
+        print("1" * m)
 
 
 row_num, col_num = tuple(map(int, input().split()))

@@ -1,6 +1,4 @@
-n, m = list(map(int, input().split()))
-
-print(n, m)
+n, m = list(map(str, input().split()))
 
 len_n = len(n)
 len_m = len(m)

@@ -1,7 +1,10 @@
 def three_six_nine_contain(i):
-    for j in [3, 6, 9]:
-        if i % 10 == j or i // 10 == j:
-            return True 
+    num_str = str(i)
+    for digit in num_str:
+        if digit in ['3', '6', '9']:
+            return True
+    return False
+
 
 def is_magic_number(i):
     return i % 3 == 0 or three_six_nine_contain(i)

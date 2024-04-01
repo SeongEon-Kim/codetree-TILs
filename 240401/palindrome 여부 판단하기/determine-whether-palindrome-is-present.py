@@ -1,6 +1,6 @@
 def is_palinadrome(a):
     for i in range(len(a)):
-        if a[i] == a[len(a)-(i+1)]:
+        if a[i] == a[len(a)-(i+1)]: # 0 1 2 3 
             status = True
         else:
             status = False
@@ -10,16 +10,7 @@ def is_palinadrome(a):
     else:
         print("No")
 
-#    else : # 홀수
-        # for i in range(len(a)):
-        #     if a[i] == a[len(a)-(i+1)]:
-        #         status = True
-        # if status:
-        #     print("Yes")
-        # else:
-        #     print("No")
 
-
-n = str(input().split())
+n = input().split()
 
 is_palinadrome(n)

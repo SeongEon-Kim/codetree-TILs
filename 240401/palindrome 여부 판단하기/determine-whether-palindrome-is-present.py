@@ -1,9 +1,10 @@
 def is_palinadrome(a):
-#    if len(a) % 2 ==0: # 짝수
-    status = False
     for i in range(len(a)):
         if a[i] == a[len(a)-(i+1)]:
             status = True
+        else:
+            status = False
+            break
     if status:
         print("Yes")
     else:

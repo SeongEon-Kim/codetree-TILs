@@ -1,16 +1,9 @@
-def is_palinadrome(a):
-    for i in range(len(a)):
-        if a[i] == a[len(a)-(i+1)]: # 0 1 2 3 
-            status = True
-        else:
-            status = False
-            break
-    if status:
-        print("Yes")
-    else:
-        print("No")
+def is_palindrome(a):
+    for i in range(len(a) // 2):
+        if a[i] != a[-(i + 1)]:
+            return "No"
+    return "Yes"
 
+n = input()
 
-n = input().split()
-
-is_palinadrome(n)
+print(is_palindrome(n))

@@ -4,4 +4,4 @@ def find_substring_index(input_string, target_string):
 n = input()
 m = input()
 
-find_substring_index(n, m)
+print(find_substring_index(n, m))

@@ -13,4 +13,5 @@ def lower(n):
 n = int(input())
 
 upper(n)
+print()
 lower(n)

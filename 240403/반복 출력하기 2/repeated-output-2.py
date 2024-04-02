@@ -4,5 +4,5 @@ def hellowolrd_print(n):
     hellowolrd_print(n-1) 
     print("HelloWorld")
 
-n = input()
+n = int(input())
 hellowolrd_print(n)

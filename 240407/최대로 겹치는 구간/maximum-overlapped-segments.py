@@ -11,8 +11,8 @@ for idx in range(n):
 
 if min_value < 0:
     for idx in range(n):
-        lines[idx][0] = -min_value
-        lines[idx][1] = -min_value
+        lines[idx][0] -= min_value
+        lines[idx][1] -= min_value
 
 overlap_list = [0 for _ in range(201)] # 0 ~ 201
 

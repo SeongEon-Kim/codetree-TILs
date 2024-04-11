@@ -35,3 +35,5 @@ for k in range(len(a_list)):
     if k != 0 and a_list[k] == b_list[k]:
         print(k)
         break
+    else:
+        print(-1)

@@ -31,9 +31,11 @@ for idx in range(m):
             b_list.append(moving)
             moving -= 1 
 
+status = True
 for k in range(len(a_list)):
     if k != 0 and a_list[k] == b_list[k]:
         print(k)
+        status = False
         break
-    else:
-        print(-1)
+if status:
+    print(-1)

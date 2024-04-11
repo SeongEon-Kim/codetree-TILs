@@ -31,7 +31,6 @@ for idx in range(m):
             b_list.append(moving)
             moving -= 1 
 
-print(a_list, b_list)
 for k in range(len(a_list)):
     if k != 0 and a_list[k] == b_list[k]:
         print(k)

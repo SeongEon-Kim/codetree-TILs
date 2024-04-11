@@ -12,5 +12,5 @@ for idx in range(n):
     else:
         continuity = 1
         ans.append(continuity)
-print(ans)
+
 print(max(ans))

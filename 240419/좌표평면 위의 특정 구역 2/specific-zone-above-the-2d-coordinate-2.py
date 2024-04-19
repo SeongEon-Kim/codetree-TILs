@@ -1,12 +1,14 @@
+import sys
+
 n = int(input())
 _list = [tuple(map(int, input().split())) for _ in range(n)]
-ans = 1000
+
 for i in range(n):
-    min_area = 1000
+    min_area = sys.maxsize
     max_height = 0
     max_width = 0
-    min_height = 10000
-    min_width = 10000
+    min_height = sys.maxsize
+    min_width = sys.maxsize
     for j in range(n):
         if i == j:
             continue

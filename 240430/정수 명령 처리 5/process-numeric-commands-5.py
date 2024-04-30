@@ -11,7 +11,11 @@ def get(value):
     print(ans_list[value-1])
 
 n = int(input())
-_list = [list(map(str,input().split())) for _ in range(9)]
+_list = []
+
+for _ in range(n):
+    command = input().split()
+    _list.append(command)
 
 ans_list = []
 

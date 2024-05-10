@@ -13,4 +13,5 @@ def insertion_sort(arr):
     return arr
 
 _list = insertion_sort(_list)
-print(_list, end=' ')
+for idx in range(n):
+    print(_list[idx], end=" ")

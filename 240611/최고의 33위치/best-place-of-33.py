@@ -13,4 +13,4 @@ for start_row in range(number - 2):
                     current_sum += 1
         answer = max(answer, current_sum)
 
-print(answer)  # 결과 출력
+print(answer)

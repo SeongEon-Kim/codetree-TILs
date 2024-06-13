@@ -1,4 +1,4 @@
-num = int(inpit())
+num = int(input())
 
 start_num = 1
 for _ in range(num):

@@ -1,10 +1,10 @@
-n, m = list(map(int,input().split()))
+n, m = list(map(int, input().split()))
 
 def max_conum(n, m):
-    max_num = max(n, m)
-    answer = 0
-    for idx in range(max_num, 1, -1):
-        if max_num%idx==0 and n%idx==0 :
-            return idx
-    return max_num
+    min_num = min(n, m) 
+    for idx in range(min_num, 0, -1): 
+        if n % idx == 0 and m % idx == 0:
+            return idx  
+    return 1  
+
 print(max_conum(n, m))

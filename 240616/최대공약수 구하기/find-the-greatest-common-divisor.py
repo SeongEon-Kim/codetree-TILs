@@ -6,5 +6,5 @@ def max_conum(n, m):
     for idx in range(max_num, 0, -1):
         if max_num%idx==0 and n%idx==0:
             return idx
-    
+    return max_num
 print(max_conum(n, m))

@@ -1,7 +1,7 @@
 n, m = list(map(int, input().split()))
 
 def calc_bmi(n,m):
-    bmi = (10000 * m)/n*n
+    bmi = int((10000 * m)/(n*n))
     return bmi
 
 bmi = calc_bmi(n,m)

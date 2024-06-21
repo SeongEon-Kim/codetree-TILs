@@ -7,4 +7,4 @@ if a%2 ==1:
     a += 1
     a /= 2
 
-print(a)
+print(int(a))

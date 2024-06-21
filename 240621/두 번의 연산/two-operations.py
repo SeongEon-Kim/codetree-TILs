@@ -6,4 +6,4 @@ if a % 2 == 1:
 if a % 3 == 0:
     a /= 3
 
-print(a)
+print(int(a))

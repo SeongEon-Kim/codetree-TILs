@@ -5,6 +5,8 @@ def special_num(n):
         list_n = str(n)
         if int(list_n[-1]) != 5:
             if n % 3 !=0 and n% 9 ==0:
+                return 0
+            else: 
                 return 1
             
     return 0

@@ -7,6 +7,9 @@ status = False
 for i in _list1:
     if i in _list2:
         status = True
-
+    else:
+        status = False
 if status:
     print('Yes')
+else:
+    print('No')

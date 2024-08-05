@@ -3,8 +3,6 @@ class RainDay:
         self.date = date
         self.day = day 
         self.weather = weather
-    def get_rain_day_info(self):
-        pass
 
 n = int(input())
 arr = [tuple(input().split()) for _ in range(n)]

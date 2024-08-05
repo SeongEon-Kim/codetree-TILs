@@ -1,15 +1,17 @@
-n1, n2 = tuple(map(int, input().split()))
+def is_subsequence(A, B):
+    n1 = len(A)
+    n2 = len(B)
 
-_list1 = list(map(int, input().split()))
-_list2 = list(map(int, input().split()))
+    # 슬라이딩 윈도우를 사용하여 A에서 B의 길이만큼의 부분 배열을 비교
+    for i in range(n1 - n2 + 1):
+        if A[i:i+n2] == B:
+            return "Yes"
+    return "No"
 
-status = False
-for i in _list1:
-    if i in _list2:
-        status = True
-    else:
-        status = False
-if status:
-    print('Yes')
-else:
-    print('No')
+# 입력 처리
+n1, n2 = map(int, input().split())
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+# 결과 출력
+print(is_subsequence(A, B))

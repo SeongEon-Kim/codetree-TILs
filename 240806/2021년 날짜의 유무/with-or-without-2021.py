@@ -15,3 +15,5 @@ elif m in [2]:
         print('Yes')
     else:
         print('No')
+else:
+    print('No')

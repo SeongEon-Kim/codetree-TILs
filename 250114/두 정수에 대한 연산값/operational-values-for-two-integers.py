@@ -1,11 +1,16 @@
 a, b = map(int, input().split())
 
-# 계산 함수
 def calculation(a, b):
+    # 작은 값과 큰 값을 판단하여 조건에 따라 처리
     if a < b:
-        return f"{a * 2} {b + 25}"  # 출력 형식을 문자열로 반환
+        small = a * 2
+        large = b + 25
     else:
-        return f"{b * 2} {a + 25}"  # 출력 형식을 문자열로 반환
+        small = b * 2
+        large = a + 25
 
-# 결과 출력
+    # 결과를 공백으로 구분하여 반환
+    return f"{small} {large}"
+
+# 함수 실행 후 출력
 print(calculation(a, b))

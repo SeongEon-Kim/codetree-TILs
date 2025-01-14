@@ -1,11 +1,11 @@
 a, b = map(int, input().split())
 
-# Write your code here!
+# 계산 함수
 def calculation(a, b):
     if a < b:
-        print(a * 2, b + 25)
+        return f"{a * 2} {b + 25}"  # 출력 형식을 문자열로 반환
     else:
-        print(b * 2, a + 25 )
-    return
+        return f"{b * 2} {a + 25}"  # 출력 형식을 문자열로 반환
 
-calculation(a,b)
+# 결과 출력
+print(calculation(a, b))

@@ -1,16 +1,19 @@
-a, b = map(int, input().split())
+# 변수 선언 및 입력
+a, b = tuple(map(int, input().split()))
 
-def calculation(a, b):
-    # 작은 값과 큰 값을 판단하여 조건에 따라 처리
-    if a < b:
-        small = a * 2
-        large = b + 25
+
+# 문제에서 설명한 대로 a와 b를 변경합니다.
+def change_number(a, b):
+    if(a > b):
+        b *= 2
+        a += 25
     else:
-        small = b * 2
-        large = a + 25
+        a *= 2
+        b += 25
 
-    # 결과를 공백으로 구분하여 반환
-    return f"{small} {large}"
+    return a, b
 
-# 함수 실행 후 출력
-print(calculation(a, b))
+
+a, b = change_number(a, b)
+
+print(a, b)

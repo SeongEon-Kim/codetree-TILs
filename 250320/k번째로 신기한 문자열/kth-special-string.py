@@ -8,4 +8,5 @@ for string in string_list:
     if t in string:
         include_list.append(string)
 
-print(include_list[k-1])
+sorted_include_list = sorted(include_list)
+print(sorted_include_list[k-1])

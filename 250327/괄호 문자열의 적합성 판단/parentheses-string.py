@@ -6,8 +6,9 @@ for e in str:
     if e =="(":
         stack.append("(")
     else: # )
-        stack.pop()
-
+        if len(stack) > 0:
+            stack.pop()
+        
 if len(stack) == 0:
     print("Yes")
 else: # >0

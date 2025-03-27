@@ -1,15 +1,19 @@
 str = input()
 
-# Please write your code here.
 stack = []
+is_valid = True
+
 for e in str:
-    if e =="(":
+    if e == "(":
         stack.append("(")
-    else: # )
+    else:  # e == ")"
         if len(stack) > 0:
             stack.pop()
-        
-if len(stack) == 0:
+        else:
+            is_valid = False
+            break
+
+if is_valid and len(stack) == 0:
     print("Yes")
-else: # >0
+else:
     print("No")

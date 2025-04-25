@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 grid = [list(map(int, input().split())) for _ in range(n)]
-answer = [[0]*(m+1) for _ in range(n+1)]
-visited = [[0]*(m+1) for _ in range(n+1)]
+answer = [[0]*(m+1) for _ in range(n)]
+visited = [[0]*(m+1) for _ in range(n)]
 
 # Please write your code here.
 

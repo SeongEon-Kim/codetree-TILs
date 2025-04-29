@@ -1,19 +1,24 @@
 n = int(input())
 
 x, y = 0, 0
-dx, dy = [1,0,-1, 0], [0, -1, 0, 1]
+
+dxs, dys = [1,0,-1,0], [0,-1,0,1]
+
+move = 0
 
 for _ in range(n):
-    direction, step = tuple(map(str,input().split()))
-    step = int(step)
-    if direction =="E":
-        i = 0
-    elif direction == "S":
-        i = 1
-    elif direction =="W":
-        i = 2
-    else : # direction =="N":
-        i = 3
-    x, y = x + (step * dx[i]), y + (step *dy[i])
+    dirs, steps = tuple(map(str, input().split()))
+    steps = int(steps)
 
-print(x,y, end=" ")
+    if dirs=="E":
+        move = 0
+    elif dirs=="S":
+        move = 1
+    elif dirs=="W":
+        move=2
+    else:
+        move=3
+    
+    x, y = x +(steps*dxs[move]), y + (steps*dys[move])
+
+print(x, y)

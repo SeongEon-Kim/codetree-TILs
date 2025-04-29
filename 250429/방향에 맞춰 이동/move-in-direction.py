@@ -8,15 +8,12 @@ for _ in range(n):
     step = int(step)
     if direction =="E":
         i = 0
-        x, y = x + (step * dx[i]), y + (step *dy[i])
     elif direction == "S":
         i = 1
-        x, y = x + (step * dx[i]), y + (step *dy[i])
     elif direction =="W":
         i = 2
-        x, y = x + (step * dx[i]), y + (step *dy[i])
     else : # direction =="N":
         i = 3
-        x, y = x + (step * dx[i]), y + (step *dy[i])
+    x, y = x + (step * dx[i]), y + (step *dy[i])
 
 print(x,y, end=" ")

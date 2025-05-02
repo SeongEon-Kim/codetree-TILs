@@ -25,7 +25,7 @@ for i in range(2, n*m + 1):
 
 for i in range(n):
     for j in range(m):
-        val = answer[i][j] % 27
+        val = answer[i][j] % 26
         if val == 0:
             val = 26  # 0이면 Z로 매핑
         print(str_list[val], end=" ")

@@ -50,5 +50,5 @@ for i in range(2, n*m +1):
 
 for i in range(n):
     for j in range(m): 
-        print(str_list[answer[i][j]%26], end =" ")
+        print(str_list[answer[i][j]%27], end =" ")
     print()

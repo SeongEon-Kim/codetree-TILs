@@ -1,7 +1,8 @@
 n, m = map(int, input().split())
 
 # need to change dict
-str_list = {1:"A",
+str_list = {0:"Z",
+            1:"A",
             2:"B",
             3:"C",
             4:"D",

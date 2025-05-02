@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 
 # need to change dict
-str_list = {0:"Z",
+str_list = {
             1:"A",
             2:"B",
             3:"C",
@@ -50,6 +50,9 @@ for i in range(2, n*m +1):
     answer[x][y] = i
 
 for i in range(n):
-    for j in range(m): 
-        print(str_list[answer[i][j]%27], end =" ")
+    for j in range(m):
+        val = answer[i][j] % 27
+        if val == 0:
+            val = 26  # 0이면 Z로 매핑
+        print(str_list[val], end=" ")
     print()

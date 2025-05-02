@@ -1,6 +1,5 @@
 n, m = map(int, input().split())
 
-n = 4
 answer = [
     [0] * m
     for _ in range(n)

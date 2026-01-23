@@ -20,3 +20,6 @@ for i in range(N):
     x = x + dx[move] * len
     y = y + dy[move] * len
 print(x, y)
+
+# 딕셔너리 활용 가능
+# c_dir = {"N": 3, "E": 0, "S": 2, "W": 1}

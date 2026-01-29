@@ -21,8 +21,7 @@ def move(a, b, d): # direction, t 만큼 반복
         a = a + dxs[d]
         b = b + dys[d]
     else: # 격자 안에 없으면 방향만 변경
-        # 0 <-> 2, 1 <-> 3 / d = (d + 2) % 4
-        d = (d + 2) % 4
+        d = 3 - d
 
     return a, b, d
 

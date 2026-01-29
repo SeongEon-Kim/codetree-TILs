@@ -8,8 +8,8 @@ dys = [1, 0,  0, -1]
 wordtodir = {
     "R": 0,
     "D": 1,
-    "L": 2,
-    "U": 3
+    "U": 2,
+    "L": 3
 }
 direction = wordtodir[d]
 

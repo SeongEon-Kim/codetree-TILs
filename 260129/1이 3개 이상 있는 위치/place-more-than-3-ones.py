@@ -10,7 +10,7 @@ def in_range(x, y):
 for i in range(n): # [[0, 1, 0, 1], [0, 0, 1, 1], [0, 1, 0, 1], [0, 0, 1, 0]]
     for j in range(n): # [0, 1, 0, 1]
         cnt = 0 
-        for k in range(n): # 동, 남, 서, 북
+        for k in range(4): # 동, 남, 서, 북
             dx = i + dxs[k]
             dy = j + dys[k]
             if in_range(dx, dy) and grid[dx][dy] == 1:

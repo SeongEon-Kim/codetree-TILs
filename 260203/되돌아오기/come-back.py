@@ -24,6 +24,8 @@ for d, k in moves: # 방향, 거리 ex) N 3
         if x == 0 and y == 0:
             print(time)
             found = 1
-            return
+            break
+    if found:
+        break
 if not found:
     print(-1)

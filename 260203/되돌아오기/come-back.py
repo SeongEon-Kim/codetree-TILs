@@ -1,0 +1,28 @@
+n = int(input())
+moves = [tuple(input().split()) for _ in range(n)]
+# grid = [[0]*10 for _ in range(10)]
+
+dxs, dys = [0, 1, 0, -1], [1, 0, -1, 0] # E, S, W, N
+dir = 0
+x, y = 0, 0
+time = 0
+
+dir_map = {
+    "E" : 0,
+    "S" : 1,
+    "W" : 2,
+    "N" : 3
+}
+
+same_location = -1
+
+for d, k in moves: # 방향, 거리 ex) N 3
+    for _ in range(int(k)): # ex) 3
+        dir = int(dir_map[d]) # ex) N => 3
+        x, y = x + dxs[dir], y + dys[dir]
+        time += 1 
+        if x == 0 and y == 0:
+            print(time)
+            break
+if x != 0 or y != 0:
+    print(-1)

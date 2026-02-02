@@ -13,7 +13,7 @@ dir_map = {
     "W" : 2,
     "N" : 3
 }
-
+found = 0
 same_location = -1
 
 for d, k in moves: # 방향, 거리 ex) N 3
@@ -23,6 +23,7 @@ for d, k in moves: # 방향, 거리 ex) N 3
         time += 1 
         if x == 0 and y == 0:
             print(time)
-            break
-if x != 0 or y != 0:
+            found = 1
+            return
+if not found:
     print(-1)

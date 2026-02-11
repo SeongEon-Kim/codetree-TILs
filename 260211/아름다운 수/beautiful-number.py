@@ -3,16 +3,24 @@
 # 동일한 숫자에 대해 연달아 같은 숫자 묶음이 나오는 것 또한 아름다운 수 ex: 111 <-> 222 (2 2번, 2 1번)
 
 n = int(input())
-n = 1234
-input_list = []
+cnt = 0
 
-while True:
-    if n < 10:
-        input_list.append(n) # 나머지 넣기(뒷자리)
-        break
-    a = n % 10 # 나머지
-    n = n // 10 # 몫
-    input_list.append(a) # 나머지 넣기(뒷자리)
+def beautiful_num(length):
+    global cnt
 
-input_list = input_list[::-1]
-print(input_list)
+    # 종료: 정확히 n자리면 카운트
+    if length == n:
+        cnt += 1
+        return
+
+    # 가지치기: n을 넘으면 중단
+    if length > n:
+        return
+
+    # 블록 선택: 1~4 중 하나 붙이기
+    for d in range(1, 5):
+        if length + d <= n:
+            beautiful_num(length+d)
+
+beautiful_num(0)
+print(cnt)

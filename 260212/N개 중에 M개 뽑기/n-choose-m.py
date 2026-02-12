@@ -93,3 +93,4 @@ for i in range(1, n+1):
     combination.append(i)
     find_combination(1, i)
     combination.pop()
+"""

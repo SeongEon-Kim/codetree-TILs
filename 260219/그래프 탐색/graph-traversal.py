@@ -17,7 +17,7 @@ def dfs(vertex):
             visited[curr_v] = True
             vertex_cnt +=1
             dfs(curr_v)
-            
+
 for i in range(m):
     v1, v2 = tuple(map(int, input().split()))
 
@@ -30,7 +30,6 @@ visited[1] = True
 dfs(1)
 
 print(vertex_cnt)
-print(graph)
 
 # Sol 2) 인접행렬을 활용한 DFS
 '''

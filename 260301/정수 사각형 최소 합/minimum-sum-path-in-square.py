@@ -1,7 +1,7 @@
 n = int(input())
 grid = [list(map(int, input().split())) for _ in range(n)]
 
-INF = 10000000
+INF = 10000000000
 dp = [[INF] * n for _ in range(n)]
 
 for i in range(n):

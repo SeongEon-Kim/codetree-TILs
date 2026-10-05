@@ -10,7 +10,7 @@ def get_coins(i, j):
                 coins += 1
     return coins
 
-# 3 -> 0 / 4 -> 0, 1 / 5 -> 0, 1, 2 / n -> 0, 1, 2, ... n - 2
+# 3 -> 0 / 4 -> 0, 1 / 5 -> 0, 1, 2 / n -> 0, 1, 2, ... n - 3
 for i in range(0, n-2, 1):
     for j in range(0, n-2, 1):
         ans = max(ans, get_coins(i, j))

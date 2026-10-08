@@ -24,6 +24,30 @@
 
 
 # <격자 BFS 기본형> 
+# from collections import deque
+
+# que = deque()
+# visited = [[False for i in range(m)] for i in range(n)]
+
+# def bfs(x, y):
+#     que.append([x, y]) # 시작 노드 넣기
+#     visited[x][y] = True # 바로 방문처리
+
+#     while len(que) > 0: # 비어있지 않는 동안
+#         x = que[0][0]
+#         y = que[0][1]
+#         que.popleft()
+
+#         for i in range(4):
+#             nx = x + dx[i]
+#             ny = y + dy[i]
+
+#             if not in_range(nx, ny) or visited[nx][ny] or que[nx][ny] == 0:
+#                 continue
+#             que.append([nx,ny])
+#             visited[nx][ny] = True
+
+
 from collections import deque
 
 n, m = map(int, input().split())
